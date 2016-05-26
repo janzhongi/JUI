@@ -1,0 +1,35 @@
+http://javascript.info/tutorial/events-and-timing-depth
+
+Script taking too long and heavy jobs
+
+JavaScript can be heavy.
+
+In this case, the browser may hangup for a moment or come with a warning “Script is taking too long”.
+
+We’d want to evade that. It can be done by split the job into parts which get scheduled after each other.
+
+Then there is a “free time” for the browser to respond between parts. It is can render and react on other events. Both the visitor and the browser are happy.
+
+The background color in the example below is changed once per tick. So the browser has the time to render it, and there are no hangups. Changes are applied incrementally.
+
+
+
+http://bitovi.com/blog/2010/10/a-crash-course-in-how-dom-events-work.html
+
+You got it ?
+
+eventloop
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+
+adding message:
+
+In web browsers, messages are added any time an event occurs and there is an event listener attached to it. If there is no listener, the event is lost. So a click on an element with a click event handler will add a message--likewise with any other event.
+
+STACK,QUEUE
+
+
+setTimeout/setInterval
+Browser provides a built-in scheduler which allows to setup function calls for execution after given period of time.
+
+
+
