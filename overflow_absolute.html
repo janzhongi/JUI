@@ -1,0 +1,48 @@
+<html>
+<head>
+	<title>overflow absolute</title>
+<style>
+  .wrapper {
+    border: solid 1px;
+    height: 200px;
+    overflow: scroll;
+  }
+
+  .row{
+    height: 18px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    position: relative;
+  }
+  .flower {
+    float: right;
+    position: absolute;
+    top: 0px;
+    z-index: 10000;
+  }
+</style>
+ 
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row"></div>
+    <div class="row">
+      <ul class="flower">
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+        <li>1</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

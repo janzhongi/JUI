@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>test</title>
+</head>
+    <link href="public/bootstrap/b3/bootstrap-3.2.0/dist/css/bootstrap.css" rel="stylesheet" type="text/css"/>	
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/test.js"></script>
+     
+     <style>
+        div{
+            border: solid 1px;
+            margin-bottom: 50px;
+        }
+        .word-wrap-normal{
+            word-wrap: normal;
+        }
+        .word-wrap-break-word{
+            word-wrap: break-word;
+        }
+        .word-break-all{
+            word-break: break-all;
+        }
+        .word-break-word{
+            word-break: break-word;
+        }
+        .word-keep-all{
+            word-break: keep-all;
+        }
+     </style>
+
+<body>
+
+    <h1>word wrap</h1>
+
+    <h2>宽度不固定，div宽度为屏幕宽度, word-wrap 不设定，默认normal，div宽度为屏幕宽度，</h2>
+    <div class="h50 ">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+    <h2>宽度不固定，div宽度为屏幕宽度，设定word-wrap，break-word，break-word溢出换行</h2>
+    <div class="word-wrap-break-word h50 ">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+    </div>
+
+    <h2>宽度固定，word-wrap 不设定，默认normal，换行，溢出</h2>
+   <div class="w200 h50 container">
+    hello my dear friendfriendfriendfriendfriendfriendfriendfriendfriendfriend换_break_word
+    </div>
+
+    <h2>宽度固定，word-wrap 设定break-word，开头另起一行,后面换行断</h2>
+    <div class="word-wrap-break-word w200 h50 container">
+    hello my dear friendfriendfriendfriendfriendfriendfriendfriendfriendfriend_break_word
+    </div>
+
+    <h1>word break</h1>
+    <h2>宽度固定，word-break，不设定，换行，溢出</h2>
+   <div class="w200 h50 container">
+    hello my dear friendfriendfriendfriendfriendfriendfriendfriendfriendfriend
+    </div>
+
+   <h2>宽度固定，word-break，keep-all，开头放不下，换行，结尾放不下，算了，溢出</h2>
+   <div class="word-keep-all w200 h50 container">
+    hello my dear friendfriendfriendfriendfriendfriendfriendfriendfriendfriend
+    </div>
+
+  <h2>宽度固定，word-break，break-all，开头放不下，挤一下，结尾放不下，换一行</h2>
+   <div class="word-break-all w200 h50 container">
+    hello my dear friendfriendfriendfriendfriendfriendfriendfriendfriendfriend
+   </div>
+
+
+   <h1>word wrap& word break</h1>
+   <div class="w200 h50 container word-break-all">
+    hello every body I have some sdfs sdfs nnlkjl to let all you  know  cdergg
+   </div>
+
+   <h1>for span test</h1>
+   <h2>div span, word wrap break</h2>
+   <div class="w200 h50 container word-wrap-break-word">
+     <span>hello</span> <span>my</span> <span>dear</span> <span>friendfriendfriendfriendfriendfriendfriendfriendfriendfriend</span>
+   </div>
+
+   <h2>div span, word wrap break</h2>
+   <div class="w200 h50 container word-wrap-break-word">
+     <span>hello</span> <span>my</span> <span>dear</span> <span>friendfriendfriendfriendfriendfriendfriendfriendfriendfriend</span>
+   </div>
+
+    <!-- table -->
+    <div class="w600 h50 container">
+        <table class>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+
+</body>
+</html>
